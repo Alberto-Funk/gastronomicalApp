@@ -20,31 +20,48 @@
   <div class="bg-img"></div>
   <div class="opac"></div>
 
-  <div class="container-fluid">
-
-    <div class="container-fluid main-header">
+  <div class="container-fluid main-container">
+    <header class="container-fluid sticky-top main-header">
       <div class="row main-header__row">
         <div class="main-header__img--container">
-          <img src="" alt="website logo" class="main-header__img">
+          <img src="img/urban-collective2.png" alt="website logo" class="main-header__img m-hider" width="250px;">
+          <img src="img/urban-collective2-sm.png" alt="website logo" class="main-header__img d-hider" width="70px;">
         </div>
         <nav class="main-header__nav--container">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Active</a>
+              <a class="nav-link" href="#">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
-            </li>
-          </ul>              
+          </ul>
+          <div class="navbar navbar-dark">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
         </nav>
+        <div class="desktop-hide mr-5">
+          <span class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Nav
+          </span>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body no-pad">
+              <nav class="nav">
+                <a class="nav-link active" href="#">Categories</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
+                </nav>
+            </div>
+          </div>
+        </div>
       </div>
-    </div><!--End Header-->
+    </header><!--End Header-->
 
 
 
@@ -54,30 +71,30 @@
 
 
 
-    <div class="container main-footer">
+    <div class="container-fluid main-footer">
       <div class="row main-footer__row">
-        <div class="col-6">
-          <div class="main-footer__img--container">
-            <img src="" alt="website logo" class="main-footer__img">
-          </div>  
-        </div>      
-        <div class="col-6">
+        <div class="main-footer__img--container ml-2">
+          <img src="img/urban-collective2.png" alt="website logo" class="main-footer__img" width="250px;">
+        </div>
+        <div>
           <nav class="main-footer__nav--container">
-            <ul class="nav">
+            <ul class="nav main-footer__nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Active</a>
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item middle">
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
-              </li>
-            </ul>              
+            </ul>
           </nav>
+        </div>
+      </div>
+      <div class="row main-footer__copy">
+        <div class="col-12">
+          <p>Copyright 2018</p>
         </div>
       </div>
     </div><!--End Footer-->

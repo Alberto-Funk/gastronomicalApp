@@ -134,7 +134,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: sans-serif;
 }
 h1,
 h2,
@@ -144,4 +144,159 @@ h5 {
   font-family: serif;
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+.opac {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bg-img {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/brooke-lark-food.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: space between;
+}
+.main-content {
+  height: 80%;
+}
+.main-header {
+  padding: 20px;
+}
+.main-header .main-header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 730px) {
+  .main-header .main-header__row .main-header__img--container .m-hider {
+    display: none;
+  }
+}
+.main-header .main-header__row .main-header__img--container .d-hider {
+  display: none;
+}
+@media (max-width: 730px) {
+  .main-header .main-header__row .main-header__img--container .d-hider {
+    display: inline;
+  }
+}
+.main-header .main-header__row .main-header__nav--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1400px) {
+  .main-header .main-header__row .main-header__nav--container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  .main-header .main-header__row .main-header__nav--container {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  .main-header .main-header__row .main-header__nav--container ul {
+    margin-bottom: 10px;
+  }
+}
+.main-header .main-header__row .main-header__nav--container ul a {
+  color: #E6DF44;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0.5px 0.5px 1px rgba(1, 26, 39, 0.3);
+}
+.main-header .main-header__row .main-header__nav--container button {
+  background-color: #3F681C;
+  color: white;
+}
+.main-header .main-header__row .main-header__nav--container button:hover {
+  background-color: #4b7c21;
+}
+.main-header .main-header__row .desktop-hide {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .main-header .main-header__row .desktop-hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-header .main-header__row .desktop-hide .no-pad {
+    padding: 5px;
+  }
+  .main-header .main-header__row .desktop-hide .no-pad .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main-footer {
+  padding: 20px;
+  background-color: rgba(1, 26, 39, 0.3);
+  border-radius: 10px;
+  max-width: 1500px;
+}
+.main-footer .main-footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .main-footer .main-footer__row {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.main-footer .main-footer__row img {
+  opacity: .5;
+}
+@media (max-width: 900px) {
+  .main-footer .main-footer__row img {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .main-footer .main-footer__row .main-footer__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.main-footer .main-footer__row .main-footer__nav a {
+  color: #E6DF44;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0.5px 0.5px 1px rgba(1, 26, 39, 0.3);
+}
+@media (max-width: 500px) {
+  .main-footer .main-footer__row .main-footer__nav .middle {
+    margin: 20px 0;
+  }
+}
+.main-footer .main-footer__copy {
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin-top: 40px;
 }

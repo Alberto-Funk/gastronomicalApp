@@ -59,11 +59,43 @@ table {
 
 html, body {
   height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: serif;
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+
+.opac {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bg-img {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/brooke-lark-food.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: space between;
+}
+
+.main-content {
+	height: 80%;
 }
