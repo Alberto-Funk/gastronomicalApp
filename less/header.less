@@ -2,13 +2,17 @@
 .main-header {
   padding: 20px;
 
+  @media (max-width: 730px) {
+    position: relative;
+  }
+
   .main-header__row {
     .flex(space-between, center);
 
     .main-header__img--container {
 
       .m-hider {
-        @media (max-width: 730px) {
+        @media (max-width: 900px) {
           display: none;
         }
       }
@@ -16,7 +20,7 @@
       .d-hider {
         display: none;
 
-        @media (max-width: 730px) {
+        @media (max-width: 900px) {
           display: inline;
         }
       }
@@ -62,17 +66,47 @@
     .desktop-hide {
       display: none;
 
+      span {
+        background: url("/myGreatPlates/img/Hamburger-o.png");
+        background-size: cover;
+        height: 80px;
+        width: 80px;
+        border: solid 1px @text-secondary-navy;
+        border-radius: 50%;
+        .flex(center, center);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      a {
+        color: @tertiary-color-yellow;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: .5px .5px 1px rgba(1, 26, 39, 0.3);
+      }
+
       @media (max-width: 1000px) {
         .flex(center, center);
         flex-direction: column;
 
         .no-pad {
-          padding: 5px;
+          padding: 0;
+          border: solid 5px @button-green;
 
           .nav {
             .flex(center, center);
+            background-color: @button-green;
           }
         }
+      }
+
+      @media (max-width: 730px) {
+        position: absolute;
+        right: 0;
       }
     }
   } // Row
