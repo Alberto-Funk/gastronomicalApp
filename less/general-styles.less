@@ -65,7 +65,7 @@ body, html {
 
 
 h1, h2, h3, h4, h5 {
-  font-family: serif;
+  font-family: 'Work Sans', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .bg-img-land {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/bg-food-two-min.jpg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/bg-food-one-min.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -109,47 +109,49 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 4.5rem;
   text-align: center;
-  color: @text-primary-dgreen;
+  color: black;
   font-weight: 600;
-  text-transform: uppercase;
+  // text-transform: capitalize;
   letter-spacing: 1px;
-  text-shadow: .5px .5px 1px rgba(240, 129, 15, 0.3);
+  text-shadow: 1px 1px 1px rgba(230, 223, 68, 0.3);
 }
 
 h2 {
   font-size: 3rem;
   text-align: center;
-  color: @text-primary-dgreen;
+  color: black;
   font-weight: 600;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: .5px .5px 1px rgba(240, 129, 15, 0.3);
+  text-shadow: 1px 1px 1px rgba(230, 223, 68, 0.3);
 }
 
 h3 {
   font-size: 2rem;
   text-align: center;
-  color: @tertiary-color-yellow;
-  font-weight: 600;
+  color: gold;
   letter-spacing: 1px;
-  text-shadow: .5px .5px 1px rgba(1, 26, 39, 0.3);
+  text-shadow: 1px 1px 1px rgba(1, 26, 39, 0.3);
 }
 
 h4 {
   font-size: 1.5rem;
   text-align: center;
-  color: @tertiary-color-yellow;
+  color: gold;
   font-weight: 600;
   letter-spacing: 1px;
-  text-shadow: .5px .5px 1px rgba(1, 26, 39, 0.3);
+  text-shadow: 1px 1px 1px rgba(1, 26, 39, 0.3);
 }
 
 p {
   font-size: 1.1rem;
   text-align: center;
   color: @text-secondary-navy;
-  font-weight: 600;
   letter-spacing: 1px;
+}
+
+hr {
+  margin: 20px 0 50px;
 }
 
 a.btn-link {
@@ -159,25 +161,42 @@ a.btn-link {
 }
 
 .btn-guest {
-  background-color: @button-green;
-  color: white;
+  background-color: transparent;
+  border: 3px solid black;
+  color: gold;
+  letter-spacing: 1px;
+  font-weight: 600;
+
   &:hover {
-    background-color: lighten(@button-green, 5%);
+    background-color: rgba(0, 0, 0, .2);
   }
 }
 
 .btn-user {
-  background-color: @button-blue;
-  color: white;
+  background-color: transparent;
+  border: 3px solid black;
+  color: gold;
+  letter-spacing: 1px;
+  font-weight: 600;
   &:hover {
-    background-color: lighten(@button-blue, 5%);
+    background-color: rgba(0, 0, 0, .2);
   }
 }
 
 .btn-create {
-  background-color: @secondary-color-orange;
-  color: white;
+  border: 3px solid black;
+  background-color: transparent;
+  color: gold;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 50%;
+  margin: auto;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+
   &:hover {
-    background-color: lighten(@secondary-color-orange, 5%);
+    background-color: rgba(0, 0, 0, .2);
   }
 }

@@ -1,11 +1,15 @@
 
 /* Home Page */
 .home-page {
-  height: 60%;
+  height: 59.5%;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .main-content-img {
+    margin-bottom: 100px;
+  }
 
   .btn-column {
     .flex(space-around, center);
@@ -35,15 +39,28 @@
 
 /* Landing Page */
 .landing-page {
+
+  .zip-enter {
+    width: 50%;
+    margin: auto;
+    border: solid 2px black;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .card-border {
+    border: solid 3px darken(gold, 7%);
+    box-shadow: 2px 2px 50px 10px rgba(0,0,0,.3);
+  }
+
   .card-img-overlay {
     padding: 0;
     .card-info-bg {
       background-color: rgba(0,0,0,.9);
       padding: 10px;
-      
-      p {
-        color: @primary-color-red;
-      }
+      padding-top: 20px;
     }
   }
 }
@@ -59,9 +76,17 @@
   .main-card-container {
     text-align: center;
     box-shadow: 2px 2px 50px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background: transparent;
+    
     
     .card-sub-container {
       padding: 0;
+      background: transparent;
+
+      .card-img-top {
+        border: solid 2px gold;
+      }
     }
   }
 
@@ -71,24 +96,28 @@
     
     .btn-more {
       font-size: 1.5rem;
-      background-color: @button-green;
-      border: none;
       width: 40%;
-      color: white;
+      background-color: transparent;
+      border: 3px solid black;
+      color: gold;
+      letter-spacing: 1px;
+      font-weight: 600;
 
       &:hover {
-        background-color: lighten(@button-green, 10%);
+        background-color: rgba(0, 0, 0, .2);
       }
     }
     .btn-next {
       font-size: 1.5rem;
-      background-color: @button-blue;
-      border: none;
       width: 40%;
-      color: white;
+      background-color: transparent;
+      border: 3px solid black;
+      color: gold;
+      letter-spacing: 1px;
+      font-weight: 600;
 
       &:hover {
-        background-color: lighten(@button-blue, 10%);
+        background-color: rgba(0, 0, 0, .2);
       }
     }
   }
@@ -100,37 +129,53 @@
   .card-container-top {
     text-align: center;
     color: white;
-
-    h1 {
-      font-size: 5rem;
-    }
   }
 
   .card-container-middle {
     text-align: center;
     color: white;
 
-    h2 {
-      font-size: 3rem;
+    img {
+      border: solid 1px gold;
+    }
+
+    h3 {
+      color: black;
     }
   }
 
   .card-container-bottom {
     text-align: center;
     color: white;
-
-    h2 {
-      font-size: 3rem;
-    }
   }
 
   .card-container-bottom-two {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    overflow-y: none;
+          /* width */
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: gold;
+      border-radius: 10px;
+    }
 
     .card-container {
       padding: 20px;
+
+      .card-title {
+        margin: 0;
+        padding: 5px 0;
+      }
     }
   }
 
@@ -146,7 +191,31 @@
   .card-container-bottom-three {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    overflow-y: none;
     padding: 20px;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: gold;
+      border-radius: 10px;
+    }
+
+    .card-container {
+      padding: 20px;
+
+      .card-title {
+        margin: 0;
+        padding: 5px 0;
+      }
+    }
   }
 }

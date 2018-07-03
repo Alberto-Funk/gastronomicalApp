@@ -43,25 +43,28 @@
         }
 
         a {
-          color: @tertiary-color-yellow;
+          color: gold;
           font-weight: 700;
           font-size: 1.3rem;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           letter-spacing: 1px;
           text-shadow: .5px .5px 1px rgba(1, 26, 39, 0.3);
 
           &:hover {
-            border-bottom: solid 1px @tertiary-color-yellow;
+            border-bottom: solid 1px gold;
           }
         }
       }
 
       button {
-        background-color: @button-green;
-        color: white;
-
+        background-color: transparent;
+        border: 2px solid black;
+        color: gold;
+        letter-spacing: 1px;
+        font-weight: 600;
+      
         &:hover {
-          background-color: lighten(@button-green, 5%);
+          background-color: rgba(0, 0, 0, .2);
         }
       }
     }
