@@ -1,8 +1,152 @@
 
-.hundred {
-  height: 100%;
+/* Home Page */
+.home-page {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .btn-column {
+    .flex(space-around, center);
+
+    .btn-column__btn {
+      width: 40%;
+
+      @media (max-width: 900px) {
+        width: 90%;
+      }
+    }
+
+    .top {
+      @media (max-width: 900px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
 
-.main-content {
-  background-color: green;
+
+/* Landing Page */
+.landing-page {
+  .card-img-overlay {
+    padding: 0;
+    .card-info-bg {
+      background-color: rgba(0,0,0,.9);
+      padding: 10px;
+      
+      p {
+        color: @primary-color-red;
+      }
+    }
+  }
+}
+
+
+/* Main Page */
+.main-page {
+  height: 60%;
+  width: 50%;
+  .flex(center, center);
+
+    
+  .main-card-container {
+    text-align: center;
+    box-shadow: 2px 2px 50px 10px rgba(0,0,0,.3);
+    
+    .card-sub-container {
+      padding: 0;
+    }
+  }
+
+  .button-container {
+    .flex(space-around, center);
+    margin-bottom: 10px;
+    
+    .btn-more {
+      font-size: 1.5rem;
+      background-color: @button-green;
+      border: none;
+      width: 40%;
+      color: white;
+
+      &:hover {
+        background-color: lighten(@button-green, 10%);
+      }
+    }
+    .btn-next {
+      font-size: 1.5rem;
+      background-color: @button-blue;
+      border: none;
+      width: 40%;
+      color: white;
+
+      &:hover {
+        background-color: lighten(@button-blue, 10%);
+      }
+    }
+  }
+}
+
+
+/* Info Page */
+.info-page {
+  .card-container-top {
+    text-align: center;
+    color: white;
+
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  .card-container-middle {
+    text-align: center;
+    color: white;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .card-container-bottom {
+    text-align: center;
+    color: white;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .card-container-bottom-two {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: none;
+
+    .card-container {
+      padding: 20px;
+    }
+  }
+
+  .card-container-bottom-two-two {
+    text-align: center;
+    color: white;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .card-container-bottom-three {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: none;
+    padding: 20px;
+  }
 }

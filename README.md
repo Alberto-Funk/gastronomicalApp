@@ -57,3 +57,7 @@ Sky - #375E97
 
 #Food Image Ideas
 https://unsplash.com/search/photos/food
+
+
+#DOCS
+https://docs.google.com/document/d/14jJdKKSHC03Bh9VqZ6bjarj23y6xuKz_B0xeSOT8RmQ/edit?usp=sharing
