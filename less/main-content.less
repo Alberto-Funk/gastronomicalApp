@@ -57,6 +57,7 @@
 
   .card-img-overlay {
     padding: 0;
+
     .card-info-bg {
       background-color: rgba(0,0,0,.9);
       padding: 10px;
@@ -126,6 +127,14 @@
 
 /* Info Page */
 .info-page {
+
+  .card {
+    box-shadow: .5px .5px 10px 5px rgba(0,0,0,.2);
+    &:hover {
+      box-shadow: 1px 1px 50px 1px rgba(255, 215, 0, 0.1);
+    }
+  }
+
   .card-container-top {
     text-align: center;
     color: white;
@@ -136,7 +145,12 @@
     color: white;
 
     img {
-      border: solid 1px gold;
+      border: solid 1px #ffd700;
+      box-shadow: 2px 2px 50px 10px rgba(0,0,0,.3);
+
+      &:hover {
+        box-shadow: 1px 1px 50px 1px rgba(255, 215, 0, 0.1);
+      }
     }
 
     h3 {
@@ -182,10 +196,6 @@
   .card-container-bottom-two-two {
     text-align: center;
     color: white;
-
-    h2 {
-      font-size: 3rem;
-    }
   }
 
   .card-container-bottom-three {

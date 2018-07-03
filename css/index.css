@@ -204,7 +204,6 @@ h4 {
   font-size: 1.5rem;
   text-align: center;
   color: gold;
-  font-weight: 600;
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px rgba(1, 26, 39, 0.3);
 }
@@ -481,6 +480,12 @@ a.btn-link:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* Info Page */
+.info-page .card {
+  box-shadow: 0.5px 0.5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.info-page .card:hover {
+  box-shadow: 1px 1px 50px 1px rgba(255, 215, 0, 0.1);
+}
 .info-page .card-container-top {
   text-align: center;
   color: white;
@@ -490,7 +495,11 @@ a.btn-link:hover {
   color: white;
 }
 .info-page .card-container-middle img {
-  border: solid 1px gold;
+  border: solid 1px #ffd700;
+  box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.3);
+}
+.info-page .card-container-middle img:hover {
+  box-shadow: 1px 1px 50px 1px rgba(255, 215, 0, 0.1);
 }
 .info-page .card-container-middle h3 {
   color: black;
@@ -527,9 +536,6 @@ a.btn-link:hover {
 .info-page .card-container-bottom-two-two {
   text-align: center;
   color: white;
-}
-.info-page .card-container-bottom-two-two h2 {
-  font-size: 3rem;
 }
 .info-page .card-container-bottom-three {
   flex-wrap: nowrap;
