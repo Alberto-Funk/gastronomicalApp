@@ -131,10 +131,10 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
+body,
+html {
   font-family: sans-serif;
+  height: 100%;
 }
 h1,
 h2,
@@ -165,12 +165,6 @@ h5 {
   z-index: -2;
 }
 .main-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-items: space between;
-}
-.main-content {
   height: 100%;
 }
 .main-header {
@@ -282,6 +276,9 @@ h5 {
     position: absolute;
     right: 0;
   }
+}
+.hundred {
+  height: 100%;
 }
 .main-content {
   background-color: green;
